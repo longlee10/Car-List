@@ -1,0 +1,47 @@
+<% include ../partials/header.ejs %>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-3 col-md-6">
+      <h1><%= title %></h1>
+      <form action="" method="POST">
+        <label for="carname">Car name</label><br />
+        <input
+          type="text"
+          name="Carname"
+          id="carname"
+          placeholder=" Please enter Car name..."
+          class="form-control"
+        />
+        <br />
+        <br />
+        <label for="upper">Upper limit</label><br />
+        <input
+          type="text"
+          name="upper"
+          id="upper"
+          placeholder="Please enter upper price limit..."
+          class="form-control"
+        />
+        <br />
+        <br />
+        <label for="lower">Lower limit</label><br />
+        <input
+          type="text"
+          name="lower"
+          id="lower"
+          placeholder="Please enter lower price limit..."
+          class="form-control"
+        />
+        <br />
+        <br />
+        <button type="submit" class="btn btn-warning btn-sm">
+          <i class="fas fa-trash"></i> Delete
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer.ejs %>
